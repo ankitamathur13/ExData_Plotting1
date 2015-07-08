@@ -27,6 +27,7 @@ legend('topright',  names(powerdata)[7:9] ,lty=1, col=c('black','red', 'blue'), 
 #plot 4
 with(powerdata, plot(strptime(paste(Date,Time),"%Y-%m-%d %H:%M:%S"),Global_reactive_power, xlab="datetime",type="l"))
 
+#close the device
 dev.off()
 
 
